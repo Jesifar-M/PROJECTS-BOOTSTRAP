@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Student Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--BREADCRUMB PATH-->
+    <div class="container">
+      <nav aria-label="breadcrumb" class="py-2">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="https://www.mashupstack.com">Home</a></li>
+          <li class="breadcrumb-item"><a href="https://www.mashupstack.com/list-courses">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="https://www.mashupstack.com/list-courses">My Courses</a></li>
+        </ol>
+      </nav>
+
+      <!--Button Label-->
+      <div class="mb-3">
+        <button type="button" class="btn btn-outline-primary">Start New Course</button>
+      </div>
+
+      <!--Heading with badge-->
+      <h1 class="display-6">My Progress <span class="badge bg-primary ms-2">3 Courses</span></h1>
+
+      <!--Progress Bar-->
+      <div class="progress my-3">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+      </div>
+
+      <!--Pagination Section-->
+      <nav aria-label="Course pages">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+       </ul>
+      </nav>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
