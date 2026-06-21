@@ -112,29 +112,5 @@
     </div>
 </div>
 
-<script>
-    const rows = document.querySelectorAll("tbody tr");
-    const inactiveEmployees = [];
-
-    rows.forEach(row => {
-        const name = row.cells[0].textContent.trim();
-        const status = row.cells[2].dataset.status;
-
-        if (status !== "Active") {
-            inactiveEmployees.push(`${name} - ${status}`);
-        }
-    });
-
-    if (inactiveEmployees.length > 0) {
-        const alertBox = document.getElementById("warningAlert");
-        alertBox.innerHTML =
-            "<strong>Warning:</strong> Some employees are not currently active:<br>" +
-            inactiveEmployees.join("<br>");
-        alertBox.classList.remove("d-none");
-    }
-</script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
